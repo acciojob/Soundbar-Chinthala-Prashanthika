@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a164df;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn,
+.stop {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    padding: 24px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover,
+.stop:hover {
+    background-color: purple;
+}
+
+.btn:active,
+.stop:active {
+    transform: scale(0.95);
+}
